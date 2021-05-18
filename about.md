@@ -4,4 +4,4 @@ Hi there! My name's Harris Shadmany and I'm an Applied Mathematics and Computer 
 
 If you want to get in touch, I can be reached at harrisshadmany@berkeley.edu.
 
-![](/images/Picture.jpeg)
+<img src="images/Picture.jpeg" width=300>
