@@ -139,7 +139,7 @@ Writing bug-free code is hard. Here are some of the other tricky bugs that can s
 -Not initializing a variable or misspelling it
 -Forgetting syntax (e.g. parantheses, quotes)
 -Mixing up the order of lines
-
+-Logic errors
 
 ## Functions
 
