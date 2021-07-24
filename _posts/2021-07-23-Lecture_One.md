@@ -194,16 +194,39 @@ Remember when I told you that a big part of programming is just thinking about i
 ```python
 #Our first function
 def function_name(input1, input2):
-  sum = input1 + input2
-  return sum
+  total = input1 + input2
+  return total
 ```
+
+Remember, indentation matters in Python! You have to indent the lines inside a function.
 
 The way you define a function in Python is using the keyword **def**. After def, you put the function name. Then, within the parentheses of the function, you put the inputs to the function. Finally, once you've done all your computation and manipulation of the data, you use the **return** keyword to tell Python what the output of the function is. Once you **return** from a function, nothing else is done inside the function.
 
-## Recap
-
 ## Homework 
+
+1. Take a fresh sheet of paper out and write these sections down: Variables, Types, Input, Output, Errors, and Functions. Then write down all the syntax from memory that you can remember. This is called the Feynman technique: quizzing yourself is the best way to learn. Once you've taken your best attempt, come back to the blog post and re-read it. 
+
+2. Write a program that that asks the user for two numbers as input. Then, print the first number multiplied by the fourth power of the second number. Hint: I haven't taught you how to raise a number to another number as its power (known as exponentiation), so you should Google this. After doing that, let's make the problem more general. Write a function that takes three things as input: two numbers and an exponent. The output of the function should be the first number multiplied by the second number raised to an arbitrary exponent (which is passed to the function).
+
+3. The following is an exercise called "What Would Python Do?" from my introductory computer science class at Berkeley ([CS61A](https://cs61a.org)). Your goal is to fill in the blanks (without running the code) to think through what Python would do.
+
+>>> x = 20
+>>> x + 2
+______
+
+>>> x
+______
+
+>>> y = 5
+>>> y = y + 3
+>>> y * 2
+______
+
+>>> y = y // 4
+>>> y + x
+______
+
 
 ## What happens if I get stuck?
 
-Google it, email me, and look at the examples. Good skill to debug and work through things.
+First, you should try Googling things. Almost everything you get stuck on, someone else has and it will probably come up. Second, you can make an Ed post and I'll try to respond. Finally, you should just experiment in Python and see if you can fix it. Learning to debug your own programs is **really** valuable and something you'll have to do. 
