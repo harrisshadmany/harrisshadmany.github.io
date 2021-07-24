@@ -149,4 +149,6 @@ Write about input/output and how functions help you avoid reusing code + modular
 
 ## Homework 
 
-## Quick Notes
+## What happens if I get stuck?
+
+Google it, email me, and look at the examples. Good skill to debug and work through things.
