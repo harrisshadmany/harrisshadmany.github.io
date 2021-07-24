@@ -5,7 +5,7 @@ Table of Contents:
 1. TOC
 {:toc}
 
-## Why learn to program?
+## Why should you learn to program?
 
 One of the most irritating aspects of high school is that it often reduces to being force-fed a mixture of random facts or formulas without anyone ever telling you why you should care about all of that stuff in the first place. This course will *not* be like that. First, everything you will learn has been carefully selected and is being taught for a reason (which I'll always explain to you). We have a very limited amount of time together and I've put a lot of thought into what will be most useful to you for your future careers. Second, learning to program is **very** different from other disciplines. You'll need to memorize a few things, but the focus of the course is really about learning to think computationally. Like all things worth doing, learning to think computationally is hard. But if you actually do it, it pays off in a big way. 
 
