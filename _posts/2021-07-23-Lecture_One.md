@@ -133,17 +133,72 @@ print(3 + 3)
 
 All good now.
 
-Writing bug-free code is hard. Here are some of the other tricky bugs that can sneak into your code if you're a new programmer.
+Writing bug-free code is hard. Here are four of the most common bugs that can sneak into your code if you're a new programmer.
 
-(INSERT EXAMPLES + DESCRIPTIONS)
--Not initializing a variable or misspelling it
--Forgetting syntax (e.g. parantheses, quotes)
--Mixing up the order of lines
--Logic errors
+**1. Using a variable you never created or misspelling one that you did.**
+Python interprets everything you type literally. If you misspell a variable, it's going to throw an error since it has never seen that name before. Likewise, if you try to use a variable you forgot to create, it's going to throw an error.
+
+```python
+#Misspelling a variable
+number = 2021
+print(nubmer * 2)
+
+#Using a variable we've never created
+number = uncreated_variable * 2
+```
+
+How would debug the above code?
+
+**2. Forgetting to complete parentheses or other necessary syntax.**
+If you have one opening parentheses "(", Python demands you complete it with a closing parentheses ")" somewhere. Similarly, if you start a string (e.g. string = "didn't complete) without the second double quote ", Python will throw an error.  
+
+```python
+#Forgetting to complete syntax
+print("Hello World!"
+string = incomplete"
+
+#Putting together too many expressions on one line of code
+print() 5 6 7
+```
+
+Debug it!
+
+**3. Mixing up the order of lines of code.**
+Python executes your code top to bottom. Even if you create a variable in the lines of code below where you use the variable, Python will throw an error.
+
+```python
+#Mixing up the order of code
+print(variable)
+variable = 5
+```
+
+Debug it!
+
+**4. Writing code with flawed logic.**
+Even if Python runs your code without throwing an error, you can still have **logical** errors inside your code. Imagine I'm trying to write a program that finds the average of two numbers the user inputs.
+
+```python
+x = float(input('Enter a number: '))
+y = float(input('Enter a number: '))
+
+average = x+y/2
+print('The average of the two numbers you have entered is: ', average)
+```
+
+This program has a logical error in it. If you can't figure it out, go run the code and see what it is. Then, debug it!
 
 ## Functions
 
-Write about input/output and how functions help you avoid reusing code + modularize it.
+Remember when I told you that a big part of programming is just thinking about input and output? Functions are just boxes of computation in Python that take inputs and spit out output. Addition, multiplication, and the print statement are all functions. But how do we create our own functions?
+
+```python
+#Our first function
+def function_name(input1, input2):
+  sum = input1 + input2
+  return sum
+```
+
+The way you define a function in Python is using the keyword **def**. After def, you put the function name. Then, within the parentheses of the function, you put the inputs to the function. Finally, once you've done all your computation and manipulation of the data, you use the **return** keyword to tell Python what the output of the function is. Once you **return** from a function, nothing else is done inside the function.
 
 ## Recap
 
