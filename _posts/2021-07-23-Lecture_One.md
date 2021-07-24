@@ -22,6 +22,7 @@ Whether you want to be a software engineer (which is a fancy name for profession
 Also, if you like this course, I encourage you to look into a career in software engineering. No one ever told me about it, and it's one of the most lucrative and fun jobs out there. For some hard evidence, check out [levels.fyi](levels.fyi). College graduates can make almost $200,000 a year right out of school and it only gets better and better from there. 
 
 <img src="images/levels.png" width=300>
+![](/images/levels.png "Google New Grad Salary")
 
 **3. Learning to program is one of the best ways to exercise your brain - it makes you smarter.**
 One idea that is perpetuated over and over in the modern education system is that some kids are just "smarter" than others. This is bullshit. Overwhelmingly, research shows that what most people consider being smart is a combination of two things: **hard work and deliberate practice**. Working hard is a pre-requisite, but if all I do is basic addition for two hours a day, I'm not going to learn anything. If I instead programmed more and more complicated things, not only am I learning new skills, I'm training my brain to think about complicated, difficult scenarios and how to problem-solve them.
