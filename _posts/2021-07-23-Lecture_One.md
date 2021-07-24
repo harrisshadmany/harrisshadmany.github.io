@@ -34,7 +34,7 @@ Programming is all about data - storing it, manipulating it, and performing comp
 number = 2021
 ```
 
-In the above line of code, we've *assigned* the integer 2021 to a variable called "number". The way you create a variable in Python is by using the assignment (=) operator. To the left of the = operator, we put the **name** of our variable. To the right of the = operator, we put the **data** that we want to store in that variable.
+In the above line of code, we've *assigned* the integer 2021 to a variable called "number". The way you create a variable in Python is by using the assignment (=) operator. To the left of the = operator, we put the **name** of our variable. To the right of the = operator, we put the **data** that we want to store in that variable. The first line in the program is what we call a "comment" - putting a # in front of a line of code means you can type anything there and Python will ignore it.
 
 So what can we do with our variable?
 
@@ -63,7 +63,16 @@ num2 = 3
 print(num1 + num2)
 ```
 
-Congratulations! You just wrote your very first program. 
+Congratulations! You just wrote your very first program. One **very** important note: programs are written to by read by humans. I could have also written the above code the following way.
+
+```python
+# DO NOT DO THIS
+sadalskndlkasnd = 2
+aknlkfndslnf = 3
+print(sadalskndlkasnd + aknlkfndslnf)
+```
+
+The issue with the above code is that no one has any idea what's going on. Use **descriptive** variable names - it should be crystal clear what the variable is supposed to be storing.
 
 ## Types of Data
 So far, we've only worked with numbers. But a lot of the data in the world comes in text too. Python has different **types** of data. 
@@ -84,7 +93,7 @@ user_name = input("Hi! What's your name?")
 print("Hello " + user_name)
 ```
 
-This is also a neat example of how Python does something different (in this case addition) depending on what the *type* of the data is.
+This is also a neat example of how Python does something different (in this case addition of strings) depending on what the *type* of the data is.
 
 So, let's review everything we learned so far about variables, types, and input/output. Write a program that takes in two numbers that a user inputs and then outputs the sum of the two numbers. 
 
