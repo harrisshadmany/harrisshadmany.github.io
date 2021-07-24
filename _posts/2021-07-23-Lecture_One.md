@@ -145,8 +145,8 @@ Writing bug-free code is hard. Here are some of the other tricky bugs that can s
 
 Write about input/output and how functions help you avoid reusing code + modularize it.
 
-# Recap
+## Recap
 
-# Homework 
+## Homework 
 
-
+## Quick Notes
