@@ -210,6 +210,7 @@ The way you define a function in Python is using the keyword **def**. After def,
 
 3. The following is an exercise called "What Would Python Do?" from my introductory computer science class at Berkeley ([CS61A](https://cs61a.org)). Your goal is to fill in the blanks (without running the code) to think through what Python would do.
 
+```python
 >>> x = 20
 >>> x + 2
 ______
@@ -225,7 +226,7 @@ ______
 >>> y = y // 4
 >>> y + x
 ______
-
+```
 
 ## What happens if I get stuck?
 
