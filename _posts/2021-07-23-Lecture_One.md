@@ -115,7 +115,9 @@ print(num1 + num2)
 
 This is called **casting**. Surrounding our input with the **int** operator *casts* a string into an integer. But it only works when there's a valid conversion. 
 
-What happens if we try to add a string to an integer?
+## Errors
+
+So, what happens if we try to add a string to an integer?
 
 ```python
 print("3" + 3)
@@ -130,3 +132,21 @@ print(3 + 3)
 ```
 
 All good now.
+
+Writing bug-free code is hard. Here are some of the other tricky bugs that can sneak into your code if you're a new programmer.
+
+(INSERT EXAMPLES + DESCRIPTIONS)
+-Not initializing a variable or misspelling it
+-Forgetting syntax (e.g. parantheses, quotes)
+-Mixing up the order of lines
+
+
+## Functions
+
+Write about input/output and how functions help you avoid reusing code + modularize it.
+
+# Recap
+
+# Homework 
+
+
