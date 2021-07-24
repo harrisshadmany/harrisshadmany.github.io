@@ -21,7 +21,6 @@ Whether you want to be a software engineer (which is a fancy name for profession
 
 Also, if you like this course, I encourage you to look into a career in software engineering. No one ever told me about it, and it's one of the most lucrative and fun jobs out there. For some hard evidence, check out [levels.fyi](levels.fyi). College graduates can make almost $200,000 a year right out of school and it only gets better and better from there. 
 
-<img src="images/levels.png" width=300>
 ![](/images/levels.png "Google New Grad Salary")
 
 **3. Learning to program is one of the best ways to exercise your brain - it makes you smarter.**
