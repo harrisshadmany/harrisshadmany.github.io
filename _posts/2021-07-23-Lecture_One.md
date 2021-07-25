@@ -1,214 +1,127 @@
-# Lecture 1: Course Philosophy, Variables, Types, Input/Output
+# Lecture 1: If-Else Statments, For/While Loops, and Lists
 
 Table of Contents:
 
 1. TOC
 {:toc}
 
-## Why should you learn to program?
+## If-Else Statements
 
-One of the most irritating aspects of high school is that it often reduces to being force-fed a mixture of random facts or formulas without anyone ever telling you why you should care about all of that stuff in the first place. This course will *not* be like that. First, everything you will learn has been carefully selected and is being taught for a reason (which I'll always explain to you). We have a very limited amount of time together and I've put a lot of thought into what will be most useful to you for your future careers. Second, learning to program is **very** different from other disciplines. You'll need to memorize a few things, but the focus of the course is really about learning to think computationally. Like all things worth doing, learning to think computationally is hard. But if you actually do it, it pays off in a big way. 
+Another big part of programming is **conditional logic**. Depending on what the *state* of our variables is, we want to take different actions. Imagine you were writing an app to help people find veterinarian stores near their location. If the user has a cat, you'd probably want to do something different than if they had a dog, and so on. If-Else statements are the glue that holds all of these various pieces of logic together in a simple, concise way.
 
-I promised you at the beginning of this lecture that I would always explain **why** you should actually care about what we're going to learn. Since this is a programming course, let's start with one question: why should you learn to program?
-
-There are probably a million reasons - here are the best three. 
-
-**1. Learning to program is like having a superpower - it opens up an infinite number of possibilities.** 
-Programming is one of the 21st century's greatest inventions. Never in the history of this planet has one person sitting at a laptop been able to have such a large impact on the world. The world's biggest companies - Facebook, Google, Apple, and Microsoft - were all started by one or two people sitting down at a computer with a vision. The world is becomingly increasingly more technological and people who have the ability to program are going to run it. The most innovative technologies of the past few years are all software companies and the programmers who run them are becoming the most wealthy and powerful people in the world. You can and should be one of them.
-
-**2. Learning to program is the best investment you can make in your career and all it costs is time.** 
-Whether you want to be a software engineer (which is a fancy name for professional programmers), doctor, or lawyer, learning to program makes you someone who has a rare and valuable skillset. It means you can make websites, automate boring parts of your work, and back up your ideas with data and prototypes. Employers and colleges love it (and for good reason). 
-
-Also, if you like this course, I encourage you to look into a career in software engineering. No one ever told me about it, and it's one of the most lucrative and fun jobs out there. For some hard evidence, check out [levels.fyi](levels.fyi). College graduates can make almost $200,000 a year right out of school and it only gets better and better from there. 
-
-![](/images/levels.png "Google New Grad Salary")
-
-**3. Learning to program is one of the best ways to exercise your brain - it makes you smarter.**
-One idea that is perpetuated over and over in the modern education system is that some kids are just "smarter" than others. This is bullshit. Overwhelmingly, research shows that what most people consider being smart is a combination of two things: **hard work and deliberate practice**. Working hard is a pre-requisite, but if all I do is basic addition for two hours a day, I'm not going to learn anything. If I instead programmed more and more complicated things, not only am I learning new skills, I'm training my brain to think about complicated, difficult scenarios and how to problem-solve them.
-
-## Variables, Input, and Output
-Programming is all about data - storing it, manipulating it, and performing computations on it. But how do we store data inside a program? By using **variables**.
+Let's start with a simple example. Depending on the type of animal the user inputs, we'll print different sounds like "Bark!" or "Meow!". This is how an if-else statement is structured.
 
 ```python
-# Creates a variable called number
-number = 2021
+# If-Else Statement example
+animal = input("What type of animal do you have?")
+
+if animal == "Dog":
+   print("Bark!")
+elif animal == "Cat":
+   print("Meow!")
+else:
+   print("Na na na na.... BATMAN!)
 ```
+Note that the indentation matters - the code that gets excecuted after a statement is triggered is the indented block below that statement.
 
-In the above line of code, we've *assigned* the integer 2021 to a variable called "number". The way you create a variable in Python is by using the assignment (=) operator. To the left of the = operator, we put the **name** of our variable. To the right of the = operator, we put the **data** that we want to store in that variable. The first line in the program is what we call a "comment" - putting a # in front of a line of code means you can type anything there and Python will ignore it.
+This is the usual anatomy of an if-else block of logic. We have one or more variables that encode the state of the world. Then, depending on what the state of the world is, we take different actions. 
 
-So what can we do with our variable?
+The way you start a block of conditional logic is always with the keyword **if**. After the *if*, you have what is known as a **Boolean expression**. That's just a fancy way of saying something that evaluates to True or False. Then, you can add as many **elif** statements as you want. If you want to capture all the remaining cases, you can also have an **else** statement. 
+
+In summary, you have always have 1 if statement. Then, you have 0 to infinite elif statements. Finally, you have 0 or 1 else statements. 
+
+Sometimes, the logic behind our programs can get more complicated. To capture more complex cases, we may have to make our Boolean expressions stronger. The way we do this is by using the keywords **and** + **or**. 
+
+The following example is a toy program that one might imagine a medical professional uses. 
 
 ```python
-# Re-assign number to 4042
-number = number * 2
-print(number)
+# If-Else Statement example
+heartbeat = int(input("What is the patient's heartbeat?"))
+age = int(input("How old is the patient?"))
+
+if heartbeat > 150:
+   print("The patient is in severe danger")
+elif heartbeat > 130 and age > 80:
+   print("The patient is in severe danger")
+elif heartbeat > 110 or age > 65:
+   print("The patient needs monitoring")
+else:
+   print("The patient is fine at the moment")
 ```
-All the **print** operator does is show us what data is stored inside a variable by outputting it to the console.
 
-One thing we can do is **reassign** it. Reassignment is simple: you just use the assignment operator again. But be careful here: the "number" on the left of the assignment operator is different from the "number" on the right. The way Python interprets this *expression* is by first "evaluating" everything to the right of the assignment operator, then assigning number to whatever *value* the *expression* evaluates to. 
+Here's an interesting exercise in Boolean logic. What range of ages and heartbeat would force the above code to print "The patient is fine at the moment". 
 
-We can also use parantheses and other operations. Remember PEMDAS? Python knows PEMDAS. 
+## For Loops
+
+A lot of programming is repeating computation. Imagine we wanted to take the sum of all of the numbers from 1 to 150. We could always type out all of the numbers or expressions, but it would take forever.
+
+Or say we wanted to print "Hello" 100 times? Would we just copy and paste print("Hello") over and over again?
+
+The solution to both of these issues is to use a for loop. 
 
 ```python
-# What's number now? 
-number = (9 + 3 * 5)/ 12
+# Sum numbers from 1 to 150 using a for loop.
+total = 0
+for index in range(1, 151):
+   total += index
+
+# Print "Hello" 100 times.
+for index in range(1, 101):
+   print("Hello")
 ```
 
-What about if we tried adding two variables together?
+You start a for loop by using the keyword **for**. The **range** keyword specifies how many times you want to run whatever is inside the for loop and the variable after the *for* is what we call an "index". Remember, the *second* number in the range operator is the number *after* you want to stop. If you want to iterate for 100 times, you make it 101. You can call your index variable whatever you want. Each time the block of code inside the loop is run, the index increases by one. You can access index any time within the block of code being executed.
+
+Combining loops and conditional logic can be powerful. For example, a common introductory CS class problem is called *fizzbuzz*. For all the numbers from 1 to 100, we want to print "fizz" if the number is divisible by 3, "buzz" if the number is divisible by 5, and "fizzbuzz" if it's divisible by both. 
 
 ```python
-# Add two variables
-num1 = 2
-num2 = 3
-print(num1 + num2)
+# Fizzbuzz implementation. 
+for number in range(1, 101):
+   if number % 3 == 0 and number % 5 == 0:
+      print("fizzbuzz")
+   elif number % 3 == 0:
+      print("fizz)
+   elif number % 5 == 0:
+      print("buzz")
 ```
 
-Congratulations! You just wrote your very first program. One **very** important note: programs are written to by read by humans. I could have also written the above code the following way.
+## While Loops
+While loops are similar to for loops in that they execute blocks of code repetitively to achieve some goal. They are more useful however when you don't know how many times you'll have to execute that block of code, and you want to stop when some condition is met.
+
+Remember those pesky Boolean expressions? Those come up in while loops too. The anatomy of a while loop is very simple. It goes something like this.
 
 ```python
-# DO NOT DO THIS
-sadalskndlkasnd = 2
-aknlkfndslnf = 3
-print(sadalskndlkasnd + aknlkfndslnf)
+# Anatomy of a while loop
+while <some Boolean expression>:
+    print("This block of code")
+    print("is being")
+    print("executed.")
 ```
 
-The issue with the above code is that no one has any idea what's going on. Use **descriptive** variable names - it should be crystal clear what the variable is supposed to be storing.
+As long as "some Boolean expression" evaluates to True, the block of code indented underneath the while loop will continue to be executed.
 
-## Types of Data
-So far, we've only worked with numbers. But a lot of the data in the world comes in text too. Python has different **types** of data. 
+For a concrete example, let's say we want to find out how many numbers I have to sum starting from 1 and going to infinity before the total sum goes over 2021. Because I don't know how many numbers it is, I want to use a while loop. That would look like this.
 
 ```python
-# Different types of data
-integer_data = 2
-float_data = 3.0
-string_data = "Hello World!"
-```
-There are three types of data in the above code. Numbers like 1,2, and 3 are what we call **integers**. Numbers with decimal points are called **floats**. Text data made up of words and spaces are called **strings**. The way you tell Python you are working with strings is by surrounding text with double quotes (e.g., string = "Hogwarts").
+# Find how many numbers you need to sum until the total is greater than 2021
+total, index = 0, 1
 
-Let's write a program that takes in a user's name as input and prints "Hello USER_NAME!" as output.
-
-```python
-# Say hi to our user
-user_name = input("Hi! What's your name?")
-print("Hello " + user_name)
+while total < 2021:
+    total += index
+    index += 1
+    
+print(index)
 ```
 
-This is also a neat example of how Python does something different (in this case addition of strings) depending on what the *type* of the data is.
-
-So, let's review everything we learned so far about variables, types, and input/output. Write a program that takes in two numbers that a user inputs and then outputs the sum of the two numbers. 
-
-```python
-# Program that outputs sum of two numbers
-num1 = input("Please input your first number.")
-num2 = input("Please input your second number.")
-print(num1 + num2)
-```
-
-But wait! We have an issue. Python thinks our input is **strings** not numbers. How do we fix this?
-
-```python
-# Casting our input to integers
-num1 = int(input("Please input your first number."))
-num2 = int(input("Please input your second number."))
-print(num1 + num2)
-```
-
-This is called **casting**. Surrounding our input with the **int** operator *casts* a string into an integer. But it only works when there's a valid conversion. 
-
-## Errors
-
-So, what happens if we try to add a string to an integer?
-
-```python
-print("3" + 3)
-```
-
-This is what is called a runtime error. **Errors**, also known as bugs are horrible things - they stop your program in the middle of them running. If you want your program to work, you have to **debug** your code. 
-
-The first step in debugging is always to check the content of the error message. It tells you what line is causing the problem and what Python is having difficulty with. 
-
-```python
-print(3 + 3)
-```
-
-All good now.
-
-Writing bug-free code is hard. Here are four of the most common bugs that can sneak into your code if you're a new programmer.
-
-**1. Using a variable you never created or misspelling one that you did.**
-Python interprets everything you type literally. If you misspell a variable, it's going to throw an error since it has never seen that name before. Likewise, if you try to use a variable you forgot to create, it's going to throw an error.
-
-```python
-#Misspelling a variable
-number = 2021
-print(nubmer * 2)
-
-#Using a variable we've never created
-number = uncreated_variable * 2
-```
-
-How would debug the above code?
-
-**2. Forgetting to complete parentheses or other necessary syntax.**
-If you have one opening parentheses "(", Python demands you complete it with a closing parentheses ")" somewhere. Similarly, if you start a string (e.g. string = "didn't complete) without the second double quote ", Python will throw an error.  
-
-```python
-#Forgetting to complete syntax
-print("Hello World!"
-string = incomplete"
-
-#Putting together too many expressions on one line of code
-print() 5 6 7
-```
-
-Debug it!
-
-**3. Mixing up the order of lines of code.**
-Python executes your code top to bottom. Even if you create a variable in the lines of code below where you use the variable, Python will throw an error.
-
-```python
-#Mixing up the order of code
-print(variable)
-variable = 5
-```
-
-Debug it!
-
-**4. Writing code with flawed logic.**
-Even if Python runs your code without throwing an error, you can still have **logical** errors inside your code. Imagine I'm trying to write a program that finds the average of two numbers the user inputs.
-
-```python
-x = float(input('Enter a number: '))
-y = float(input('Enter a number: '))
-
-average = x+y/2
-print('The average of the two numbers you have entered is: ', average)
-```
-
-This program has a logical error in it. If you can't figure it out, go run the code and see what it is. Then, debug it!
-
-## Functions
-
-Remember when I told you that a big part of programming is just thinking about input and output? Functions are just boxes of computation in Python that take inputs and spit out output. Addition, multiplication, and the print statement are all functions. But how do we create our own functions?
-
-```python
-#Our first function
-def function_name(input1, input2):
-  total = input1 + input2
-  return total
-```
-
-Remember, indentation matters in Python! You have to indent the lines inside a function.
-
-The way you define a function in Python is using the keyword **def**. After def, you put the function name. Then, within the parentheses of the function, you put the inputs to the function. Finally, once you've done all your computation and manipulation of the data, you use the **return** keyword to tell Python what the output of the function is. Once you **return** from a function, nothing else is done inside the function.
+## Lists
 
 ## Homework 
 
-1. Take a fresh sheet of paper out and write these sections down: Variables, Types, Input, Output, Errors, and Functions. Then write down all the syntax from memory that you can remember. This is called the Feynman technique: quizzing yourself is the best way to learn. Once you've taken your best attempt, come back to the blog post and re-read it. 
+1. Take a fresh sheet of paper out and write these sections down: INSERT_SECTIONS. Then write down all the syntax from memory that you can remember. 
 
-2. Write a program that that asks the user for two numbers as input. Then, print the first number multiplied by the fourth power of the second number. Hint: I haven't taught you how to raise a number to another number as its power (known as exponentiation), so you should Google this. After doing that, let's make the problem more general. Write a function that takes three things as input: two numbers and an exponent. The output of the function should be the first number multiplied by the second number raised to an arbitrary exponent (which is passed to the function).
+2. Write a program that 
 
-3. The following is an exercise called "What Would Python Do?" from my introductory computer science class at Berkeley ([CS61A](https://cs61a.org)). Your goal is to fill in the blanks (without running the code) to think through what Python would do.
+3. Another "What Would Python Do?" question.
 
 ```python
 >>> x = 20
@@ -227,7 +140,3 @@ ______
 >>> y + x
 ______
 ```
-
-## What happens if I get stuck?
-
-First, you should try Googling things. Almost everything you get stuck on, someone else has and it will probably come up. Second, you can make an Ed post and I'll try to respond. Finally, you should just experiment in Python and see if you can fix it. Learning to debug your own programs is **really** valuable and something you'll have to do. 
