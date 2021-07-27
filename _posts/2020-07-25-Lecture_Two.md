@@ -197,7 +197,7 @@ Here's a couple questions from my intro computer science class [CS61A](https://c
 
 2. Write a function that returns True if a positive integer n is a prime number and False otherwise.
 
-3. A"What Would Python Do?" question - fill in the blanks.
+3. Here's a "What Would Python Do?" question - fill in the blanks.
 
 ```python
 def special_case():
