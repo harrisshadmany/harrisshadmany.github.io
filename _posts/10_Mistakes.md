@@ -14,15 +14,15 @@ During one of my coffee chats with a team member, we were discussing a financial
 
 By preparing good questions, you focus the conversation on what you want to learn. That results in better engagement from both sides. It also reflects well on you: it shows you know what's important and you're willing to put in the effort to learn from someone. 
 
-**Here's the mistake I made.** Even when you're not the person who schedules the chat, you should be prepared to help drive the conversation. When you have feedback sessions with your manager or short meetings, they may not have thought through exactly what you need to get "unstuck" on your project. If you haven't  thought about what would be helpful to get you unstuck, why would they?
+**Here's the mistake I made.** When I first started going to meetings scheduled by other people, I wasn't prepared to help drive the conversation. I had to learn to prepare no matter what. If I was stuck on something, I would think about what might be helpful to get me unstuck.
 
 ## Tip #2: Ask "dumb" questions.
 
 It's important to ask good questions. It's also important to ask low-level, seemingly trivial questions that you may have. If you're on a trading team, maybe you need help with some quirky aspect of the Bloomberg terminal. Or if you're on the software development team, you can't seem to wrap your head around how a few lines of code work. 
 
-Whatever it is, **create a support system of people to help you navigate these situations**. Oftentimes, your manager may not be the right person for these types of questions. You shouldn't be afraid to ask if you need something, but maybe check in with a fellow intern or team member first who might have navigated a similar question.
+Whatever it is, **create a support system of people to help you navigate these situations**. Oftentimes, your manager may not be the right person for these types of questions. You shouldn't be afraid to ask if you need something, but maybe check in with a fellow intern or team member first who might have navigated a similar question. Everybody needs help and everybody has dumb questions. Confusion compounds: if you don't aggressively ask your dumb questions, you'll soon have a list of 20 or 30.
 
-**Here's the mistake I made.** It's easy to get intimidated by your brilliant co-workers. But everybody needs help and everybody has dumb questions. Confusion compounds: if you don't aggressively ask your dumb questions, you'll soon have a list of 20 or 30. Not only will you be *much* slower to ramp up and be productive, you won't have learned as much as if you had just asked. **Be brave and ask.**
+**Here's the mistake I made.** I was too afraid of asking dumb questions in front of my brilliant co-workers. As soon as I started being proactive about getting my dumb questions answered, I understood a lot more and ramping up was easier.
 
 ## Tip #3: Take good notes (and reflect on them).
 
