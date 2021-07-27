@@ -1,4 +1,4 @@
-# 10 Mistakes I Made During my Quant Finance Internship (and How to Fix Them)
+# 10 Mistakes I Made During My Quant Finance Internship (and How to Fix Them)
 
 For the past 6 weeks, I've had the pleasure of interning at [D.E. Shaw](https://www.deshaw.com/who-we-are) as a Proprietary Trading intern. It's been a period of incredible personal growth and I wanted to share a few tips that I found helpful. 
 
