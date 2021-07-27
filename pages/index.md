@@ -1,1 +1,0 @@
-Hello and welcome to my blog! The following are my blog posts in chronological order. I don't recommend scrolling through it - check out my [Wiki Page](https://www.fast.ai) where I've organized posts by subject. 
