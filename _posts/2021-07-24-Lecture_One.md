@@ -230,4 +230,4 @@ ______
 
 ## What happens if I get stuck?
 
-First, you should try Googling things. Almost everything you get stuck on, someone else has and it will probably come up. Second, you can make an Ed post and I'll try to respond. Finally, you should just experiment in Python and see if you can fix it. Learning to debug your own programs is **really** valuable and something you'll have to do. 
+First, you should try Googling things. Almost everything you get stuck on, someone else has and it will probably come up. Second, you can make an Ed post and I'll try to respond. Finally, you should just experiment in Python and see if you can fix it. Learning to debug your own programs is **really** valuable and something you'll have to do eventually. 
