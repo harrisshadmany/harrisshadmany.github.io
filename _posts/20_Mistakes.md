@@ -4,7 +4,7 @@ For the past 6 weeks, I've had the pleasure of interning at [D.E. Shaw](https://
 
 I'm usually not a fan of "advice-giving" because it's ofentimes just a reflection of someone's biases and personal experiences. That's why every piece of advice I give in this post is motivated by a specific mistake I've made (with a description of what the failure mode looks like). At the very least, I hope you can avoid the errors of my ways :). 
 
-**Tip #1: Ask good questions.** 
+## Tip #1: Ask good questions.
 
 Whether it's a meeting with your manager, coffee chat with a team member, or intern learning event, this is the single most important concept I wish I had internalized before I started my internship.
 
@@ -16,8 +16,7 @@ By preparing good questions, you focus the conversation on what you want to lear
 
 **Here's the mistake I made.** Even when you're not the person who schedules the chat, you should be prepared to help drive the conversation. When you have feedback sessions with your manager or short meetings, they may not have thought through exactly what you need to get "unstuck" on your project. If you haven't  thought about what would be helpful to get you unstuck, they probably haven't either.
 
-
-**Tip #2: Ask "dumb" questions.** 
+## Tip #2: Ask "dumb" questions.
 
 It's important to ask good questions. It's also important to ask low-level, seemingly trivial questions that you may have. If you're on a trading team, maybe you need help with some quirky aspect of the Bloomberg terminal. Or if you're on the software development team, you can't seem to wrap your head around how a few lines of code work. 
 
@@ -25,7 +24,7 @@ Whatever it is, **create a support system of people to help you navigate these s
 
 **Here's the mistake I made.** It's easy to get intimidated by your brilliant co-workers. But everybody needs help and everybody has dumb questions. Confusion compounds: if you don't ask your dumb questions almost immediately, you'll soon have a list of 20 or 30. Not only will you be *much* slower to ramp up and be productive, you won't have learned as much as if you had just asked. **Be brave and ask.**
 
-**Tip #3: Take the time to do things right.** 
+## Tip #3: Take the time to do things right.
 
 Most of the projects you will be assigned are meaty, multi-week endeavors. It's almost never the right move to just jump in and start hacking together something to prove that you can be productive. 
 
@@ -35,7 +34,7 @@ It can seem like you're making slow progress at first, but setting a solid found
 
 **Here's the mistake I made.** As soon as I was given my project, I immediately created a dataset and fitted some models to present to my manager. But I lacked both the statistics background and domain knowledge required to make a meaningful contribution. I ended up having to spend the next week solidifying my background knowledge anyways.
 
-**Tip #4: Be flexible with your schedule.** 
+## Tip #4: Be flexible with your schedule.** 
 
 This is highly dependent on your employer: different workplaces have different expectations. At D.E. Shaw, however, no one expects you to work a strict set of hours. You have certain obligations, like attending meetings and responding to messages, but there's a lot of flexibility. You should take advantage of that. 
 
@@ -44,7 +43,7 @@ It's an open question as to what is takes to be productive. But it would be naï
 If you know you'll be exhausted Monday morning after a busy weekend, maybe you can schedule less cognitively intensive tasks like doing coffee chats or 
 
 
-**Tip #5: Use version control.** 
+## Tip #5: Use version control.** 
 
 This is not something that only applies to people writing code or building models. No matter what your role is, you should always save previous drafts of your work. First, something can always go wrong. What happens if you delete half of your document and accidentally hit the save button in Microsoft Word? Or if you deleted a paragraph from your first draft, but now you realize you want it back? 
 
@@ -52,7 +51,7 @@ This is not something that only applies to people writing code or building model
 
 **Here's the mistake I made.** Once I had retrieved my data, I would begin to clean it and remove any anomalies. I should've saved a copy of the original first. Sometimes, I would delete a column when I wasn't using that variable anymore. Then I'd decide I actually needed it. Again, I should've saved a copy.
 
-**Tip #6: Avoid silent failures by using common sense.** 
+## Tip #6: Avoid silent failures by using common sense.** 
 
 This is sort of a niche tip that mostly applies to when you're modelling 
 
